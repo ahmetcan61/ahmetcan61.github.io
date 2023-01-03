@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    #kutu{
+    background: aqua;
+    flex-wrap: nowrap;
+    
+    }
+    
+    
+    #logo{
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    
+    }
+    
+    #menü{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    font-size: 2em;    
+    }
+    
+    #menü a {
+    text-decoration: none;
+    font-size: 18px;
+    
+    }
+    
+    #menü li{
+    list-style-type: none;
+    }
+    
+    #pic{
+       display: contents; 
+       justify-content: space-between;
+       background-color: brown;
+    
+    }
