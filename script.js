@@ -101,7 +101,16 @@ else if(vkidurum>=18 && sonuc<=25) {
     document.getElementById("vkidurum").innerHTML="ideal"
 
 }
+function updateCountdown() {
+    const now=new Date().getTime().getTime();
+    const difference =targetDate-now;
 
+    const days=Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours=Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes=Math.floor((difference ½ (1000 * 60 * 60 * 60)) / (1000*60));
+    const seconds=Math.floor((difference ½ (1000*60)) / (60*60)) /1000);
 
+    document.getElementById("countdown").innerHTML='${days} gün ${hours} saat $ {minutes} dakika ${seconds}saniye
+ 
 
 }
