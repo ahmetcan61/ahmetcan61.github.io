@@ -1,13 +1,6 @@
 body{
-    background: linear-gradient(#e66465, #c8cadf);
-    height: auto;
-    font-family:Arial,sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    margin:0;
-    
+     font-family: Arial, sans-serif;
+    text-align: center;
 }
 #container{
     display: flex;
@@ -20,10 +13,8 @@ body{
 h1{
  color:#333;   
 }
-#countdown{
-font-size:2rem;
-color:#ff4500;
-margin-top:20px;
+.countdown {
+    margin-top: 50px;
 }
 .kutu1{
     padding: 10px;
