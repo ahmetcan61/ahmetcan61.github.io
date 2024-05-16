@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var deadline = new Date("January 1, 2025 00:00:00").getTime();
+    var deadline = new Date("2024-12-31 23:59:59").getTime();
 
     var x = setInterval(function() {
         var now = new Date().getTime();
@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((t % (1000 * 60)) / 1000);
 
-        document.getElementById("timer").innerHTML = days + " gün " + hours + " saat "
+        document.getElementById("countdown").innerHTML = days + " gün " + hours + " saat "
         + minutes + " dakika " + seconds + " saniye ";
 
         if (t < 0) {
             clearInterval(x);
-            document.getElementById("timer").innerHTML = "Doğum günün kutlu olsun!";
+            document.getElementById("countdown").innerHTML = "Doğum günün kutlu olsun!";
         }
     }, 1000);
 });
